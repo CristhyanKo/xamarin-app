@@ -21,7 +21,7 @@ namespace App01_ConsultarCEP.Service
 
             Endereco end = JsonConvert.DeserializeObject<Endereco>(content);
 
-            if (end.Cep == null) throw new Exception("CEP inválido..");
+            if (end.Cep == null) throw new Exception("CEP inválido.");
 
             return end;
         }
